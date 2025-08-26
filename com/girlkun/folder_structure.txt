@@ -1,0 +1,451 @@
+.
+├── card
+│   ├── Card.java
+│   ├── OptionCard.java
+│   ├── RadarCard.java
+│   └── RadarService.java
+├── consts
+│   ├── ConstAccount.java
+│   ├── ConstIgnoreName.java
+│   ├── ConstMap.java
+│   ├── ConstMob.java
+│   ├── ConstNpc.java
+│   ├── ConstPlayer.java
+│   ├── ConstRatio.java
+│   ├── ConstTask.java
+│   └── Test.java
+├── data
+│   ├── DataGame.java
+│   ├── ImageEncryptionUtil.java
+│   └── ItemData.java
+├── folder_structure.txt
+├── jdbc
+│   └── daos
+│       ├── GiftDAO.java
+│       ├── GodGK.java
+│       ├── HistoryTransactionDAO.java
+│       ├── PlayerDAO.java
+│       └── ShopDAO.java
+├── kygui
+│   ├── ItemKyGui.java
+│   ├── ShopKyGuiManager.java
+│   └── ShopKyGuiService.java
+├── lib
+│   └── RandomCollection.java
+├── Manager
+│   └── Manager.java
+├── MaQuaTang
+│   ├── MaQuaTang.java
+│   └── MaQuaTangManager.java
+├── models
+│   ├── boss
+│   │   ├── BossData.java
+│   │   ├── BossesData.java
+│   │   ├── BossID.java
+│   │   ├── Boss.java
+│   │   ├── BossManager.java
+│   │   ├── BossStatus.java
+│   │   ├── dhvt
+│   │   │   ├── BossDHVT.java
+│   │   │   ├── ChanXu.java
+│   │   │   ├── ChaPa.java
+│   │   │   ├── JackyChun.java
+│   │   │   ├── LiuLiu.java
+│   │   │   ├── ODo.java
+│   │   │   ├── PonPut.java
+│   │   │   ├── Ruong12.java
+│   │   │   ├── SoiHecQuyn.java
+│   │   │   ├── TauPayPay.java
+│   │   │   ├── ThienXinHangClone.java
+│   │   │   ├── ThienXinHang.java
+│   │   │   ├── Xinbato.java
+│   │   │   └── Yamcha.java
+│   │   ├── iboss
+│   │   │   ├── IBossDie.java
+│   │   │   ├── IBossDoanhTrai.java
+│   │   │   ├── IBossNew.java
+│   │   │   └── IBossOutfit.java
+│   │   ├── list_boss
+│   │   │   ├── android
+│   │   │   │   ├── Android13.java
+│   │   │   │   ├── Android14.java
+│   │   │   │   ├── Android15.java
+│   │   │   │   ├── DrMyuu.java
+│   │   │   │   └── SuperAndroid17.java
+│   │   │   ├── AnTrom.java
+│   │   │   ├── bandokhobau
+│   │   │   │   └── TrungUyXanhLoBdkb.java
+│   │   │   ├── BLACK
+│   │   │   │   ├── BlackGokuTl.java
+│   │   │   │   ├── Black.java
+│   │   │   │   ├── SuperBlack2.java
+│   │   │   │   ├── SuperBlackGoku.java
+│   │   │   │   ├── ZamasKaio.java
+│   │   │   │   └── ZamasMax.java
+│   │   │   ├── Boss
+│   │   │   │   ├── MaBuCom.java
+│   │   │   │   ├── MaBuDepTrai.java
+│   │   │   │   └── MaBuMap.java
+│   │   │   ├── BossEvent
+│   │   │   │   ├── BossBangTinh.java
+│   │   │   │   └── BossHoaTinh.java
+│   │   │   ├── Broly
+│   │   │   │   ├── BossKhiUltra.java
+│   │   │   │   ├── BossThanMeo.java
+│   │   │   │   ├── BossThoDaiKa.java
+│   │   │   │   ├── Broly.java
+│   │   │   │   ├── MaVuongPicolo.java
+│   │   │   │   ├── Super.java
+│   │   │   │   ├── ThachDauGoJo.java
+│   │   │   │   └── ThachDauWhis.java
+│   │   │   ├── cell
+│   │   │   │   ├── SieuBoHung.java
+│   │   │   │   ├── XenBoHung.java
+│   │   │   │   └── Xencon.java
+│   │   │   ├── ConDuongRanDoc
+│   │   │   │   ├── Nappa.java
+│   │   │   │   ├── Saibamen2.java
+│   │   │   │   ├── Saibamen3.java
+│   │   │   │   ├── Saibamen4.java
+│   │   │   │   ├── Saibamen5.java
+│   │   │   │   ├── Saibamen6.java
+│   │   │   │   ├── Saibamen.java
+│   │   │   │   └── Vegeta.java
+│   │   │   ├── Cooler
+│   │   │   │   ├── Cooler.java
+│   │   │   │   └── Frost.java
+│   │   │   ├── DoanhTraiDocNhan
+│   │   │   │   ├── NinjaAoTimClone.java
+│   │   │   │   ├── NinjaAoTim.java
+│   │   │   │   ├── RobotVeSi.java
+│   │   │   │   ├── TrungUyThep.java
+│   │   │   │   ├── TrungUyTrang.java
+│   │   │   │   └── TrungUyXanhLo.java
+│   │   │   ├── doanh_trai_old
+│   │   │   │   ├── BossDoanhTrai.java
+│   │   │   │   ├── NinjaAoTim.java
+│   │   │   │   ├── NinjaClone.java
+│   │   │   │   ├── RobotVeSi.java
+│   │   │   │   ├── TrungUyThep.java
+│   │   │   │   ├── TrungUyTrang.java
+│   │   │   │   └── TrungUyXanhLo.java
+│   │   │   ├── Doraemon
+│   │   │   │   ├── Chaien.java
+│   │   │   │   ├── Doraemon.java
+│   │   │   │   ├── Nobita.java
+│   │   │   │   ├── Xeko.java
+│   │   │   │   └── Xuka.java
+│   │   │   ├── DuongTank.java
+│   │   │   ├── fide
+│   │   │   │   └── Fide.java
+│   │   │   ├── FideBack
+│   │   │   │   ├── FideRobot.java
+│   │   │   │   └── Kingcold.java
+│   │   │   ├── gas
+│   │   │   │   ├── DrLyChee1.java
+│   │   │   │   ├── DrLyChee.java
+│   │   │   │   ├── HaChiJack1.java
+│   │   │   │   └── HaChiJack2.java
+│   │   │   ├── ginyu
+│   │   │   │   └── TDST.java
+│   │   │   ├── gohanNN.java
+│   │   │   ├── HuyDiet
+│   │   │   │   ├── Champa.java
+│   │   │   │   ├── ThanHuyDiet.java
+│   │   │   │   ├── ThienSuWhis.java
+│   │   │   │   └── Vados.java
+│   │   │   ├── kami
+│   │   │   │   ├── cumberBlack.java
+│   │   │   │   ├── cumberYellow.java
+│   │   │   │   ├── kamiRin.java
+│   │   │   │   ├── kamiSooMe.java
+│   │   │   │   └── ThanTai.java
+│   │   │   ├── Mabu12h
+│   │   │   │   ├── BuiBui2.java
+│   │   │   │   ├── BuiBui.java
+│   │   │   │   ├── Drabura2.java
+│   │   │   │   ├── Drabura.java
+│   │   │   │   ├── MabuBoss.java
+│   │   │   │   └── Yacon.java
+│   │   │   ├── Mabu.java
+│   │   │   ├── Mai.java
+│   │   │   ├── muoichin20
+│   │   │   │   └── apk1920.java
+│   │   │   ├── nappa
+│   │   │   │   └── kukumddrambo.java
+│   │   │   ├── NgucTu
+│   │   │   │   ├── CoolerGold.java
+│   │   │   │   ├── Cumber.java
+│   │   │   │   └── SongokuTaAc.java
+│   │   │   ├── NhanBan.java
+│   │   │   ├── NRD
+│   │   │   │   ├── Rong1Sao.java
+│   │   │   │   ├── Rong2Sao.java
+│   │   │   │   ├── Rong3Sao.java
+│   │   │   │   ├── Rong4Sao.java
+│   │   │   │   ├── Rong5Sao.java
+│   │   │   │   ├── Rong6Sao.java
+│   │   │   │   └── Rong7Sao.java
+│   │   │   ├── PhoBanMiNuong
+│   │   │   │   ├── MiNuong2.java
+│   │   │   │   ├── MiNuong3.java
+│   │   │   │   └── MiNuong.java
+│   │   │   ├── picpocking
+│   │   │   │   └── picpocking.java
+│   │   │   ├── PiLap.java
+│   │   │   ├── Su.java
+│   │   │   ├── SuperXen.java
+│   │   │   ├── Tau77.java
+│   │   │   ├── TrainOffline
+│   │   │   │   ├── Bill.java
+│   │   │   │   ├── Bubbles.java
+│   │   │   │   ├── MeoThan.java
+│   │   │   │   ├── Popo.java
+│   │   │   │   ├── ThanMeo.java
+│   │   │   │   ├── ThanVuTru.java
+│   │   │   │   ├── Thuongde.java
+│   │   │   │   ├── ToSuKaio.java
+│   │   │   │   ├── TrainBoss.java
+│   │   │   │   ├── Whis.java
+│   │   │   │   └── Yajiro.java
+│   │   │   └── Yardrat
+│   │   │       └── tapsu4.java
+│   │   ├── pl.java
+│   │   ├── TypeAppear.java
+│   │   └── vodai
+│   │       ├── Bongbang.java
+│   │       ├── BossVD.java
+│   │       ├── Dracula.java
+│   │       ├── Nguoivohinh.java
+│   │       ├── Satan.java
+│   │       └── Thodaubac.java
+│   ├── clan
+│   │   ├── Clan.java
+│   │   ├── ClanMember.java
+│   │   └── ClanMessage.java
+│   ├── intrinsic
+│   │   ├── Intrinsic.java
+│   │   └── IntrinsicPlayer.java
+│   ├── item
+│   │   ├── Item.java
+│   │   └── ItemTime.java
+│   ├── map
+│   │   ├── bando
+│   │   │   ├── BanDoKhoBau.java
+│   │   │   └── BanDoKhoBauService.java
+│   │   ├── blackball
+│   │   │   └── BlackBallWar.java
+│   │   ├── challenge
+│   │   │   ├── MartialCongress.java
+│   │   │   ├── MartialCongressManager.java
+│   │   │   └── MartialCongressService.java
+│   │   ├── ConDuongRanDoc
+│   │   │   ├── ConDuongRanDoc.java
+│   │   │   └── ConDuongRanDocService.java
+│   │   ├── daihoi
+│   │   │   ├── DaiHoiManager.java
+│   │   │   └── DaiHoiService.java
+│   │   ├── doanhtrai
+│   │   │   ├── DoanhTrai.java
+│   │   │   └── DoanhTraiService.java
+│   │   ├── gas
+│   │   │   ├── Gas.java
+│   │   │   └── GasService.java
+│   │   ├── GiaiCuuMiNuong
+│   │   │   ├── GiaiCuuMiNuong.java
+│   │   │   └── GiaiCuuMiNuongService.java
+│   │   ├── ItemMap.java
+│   │   ├── Mapchichi
+│   │   │   └── Map22h.java
+│   │   ├── Map.java
+│   │   ├── MapMaBu
+│   │   │   └── MapMaBu.java
+│   │   ├── MapSatan
+│   │   │   └── MapSatan.java
+│   │   ├── MapVoDai
+│   │   │   └── MapVodai.java
+│   │   ├── nguhanhson
+│   │   │   └── nguhs.java
+│   │   ├── sieuhang
+│   │   │   ├── ClonePlayer.java
+│   │   │   ├── SieuHang.java
+│   │   │   ├── SieuHangManager.java
+│   │   │   └── SieuHangService.java
+│   │   ├── TrapMap.java
+│   │   ├── vodai
+│   │   │   ├── MartialCongresse.java
+│   │   │   ├── MartialCongressManagere.java
+│   │   │   └── MartialCongressServices.java
+│   │   ├── WayPoint.java
+│   │   └── Zone.java
+│   ├── matches
+│   │   ├── GiaiNgoaiHang.java
+│   │   ├── IPVP.java
+│   │   ├── pvp
+│   │   │   ├── DaiHoiVoThuat.java
+│   │   │   ├── DaiHoiVoThuatService.java
+│   │   │   ├── PVPDaiHoi.java
+│   │   │   ├── ThachDau.java
+│   │   │   └── TraThu.java
+│   │   ├── PVP.java
+│   │   ├── PVPManager.java
+│   │   ├── PVPService.java
+│   │   ├── TOP.java
+│   │   ├── TYPE_LOSE_PVP.java
+│   │   └── TYPE_PVP.java
+│   ├── mob
+│   │   ├── ConstAttribute.java
+│   │   ├── Drop.java
+│   │   ├── MobEffectSkill.java
+│   │   ├── Mob.java
+│   │   ├── MobMe.java
+│   │   └── MobPoint.java
+│   ├── npc
+│   │   ├── BaseMenu.java
+│   │   ├── godGK.java
+│   │   ├── IAtionNpc.java
+│   │   ├── NauBanh.java
+│   │   ├── NpcFactory.java
+│   │   ├── Npc.java
+│   │   ├── NpcManager.java
+│   │   └── specialnpc
+│   │       ├── BillEgg.java
+│   │       ├── MabuEgg.java
+│   │       └── MagicTree.java
+│   ├── player
+│   │   ├── Charms.java
+│   │   ├── CPoint.java
+│   │   ├── EffectFlagBag.java
+│   │   ├── EffectSkill.java
+│   │   ├── EffectSkin.java
+│   │   ├── Enemy.java
+│   │   ├── FightMabu.java
+│   │   ├── Friend.java
+│   │   ├── Fusion.java
+│   │   ├── Gift.java
+│   │   ├── IDMark.java
+│   │   ├── Inventory.java
+│   │   ├── item.java
+│   │   ├── Location.java
+│   │   ├── NewPet.java
+│   │   ├── NPoint.java
+│   │   ├── Pet3.java
+│   │   ├── Pet.java
+│   │   ├── Player.java
+│   │   ├── PlayerManger.java
+│   │   ├── Referee1.java
+│   │   ├── Referee2.java
+│   │   ├── Referee.java
+│   │   ├── RewardBlackBall.java
+│   │   ├── SetClothes.java
+│   │   ├── SkillSpecial.java
+│   │   └── TestDame.java
+│   ├── reward
+│   │   ├── ItemMobReward.java
+│   │   ├── ItemOptionMobReward.java
+│   │   └── MobReward.java
+│   ├── shop
+│   │   ├── ItemShop.java
+│   │   ├── Shop.java
+│   │   ├── ShopServiceNew.java
+│   │   └── TabShop.java
+│   ├── skill
+│   │   ├── NClass.java
+│   │   ├── PlayerSkill.java
+│   │   └── Skill.java
+│   ├── task
+│   │   ├── SideTask.java
+│   │   ├── SideTaskTemplate.java
+│   │   ├── SubTaskMain.java
+│   │   ├── TaskMain.java
+│   │   └── TaskPlayer.java
+│   └── Template.java
+├── Msg
+│   └── msg.java
+├── server
+│   ├── Client.java
+│   ├── Controller.java
+│   ├── io
+│   │   ├── MyKeyHandler.java
+│   │   └── MySession.java
+│   ├── Maintenance.java
+│   ├── Manager.java
+│   ├── MenuController.java
+│   ├── model
+│   │   ├── AntiLogin.java
+│   │   └── Util.java
+│   ├── obito.java
+│   ├── Panel.java
+│   ├── ServerLogSavePlayer.java
+│   ├── ServerManager.java
+│   └── ServerNotify.java
+├── service
+│   └── Setting.java
+├── services
+│   ├── ChatGlobalService.java
+│   ├── ClanService.java
+│   ├── Cmd.java
+│   ├── EffectSkillService.java
+│   ├── FlagBagService.java
+│   ├── FriendAndEnemyService.java
+│   ├── func
+│   │   ├── ChangeMapService.java
+│   │   ├── ChonAiDay.java
+│   │   ├── CombineNew.java
+│   │   ├── CombineServiceNew.java
+│   │   ├── EffectMapService.java
+│   │   ├── GameData.java
+│   │   ├── Game.java
+│   │   ├── Input.java
+│   │   ├── LuckyRound.java
+│   │   ├── minigame
+│   │   │   ├── ChonAiDay_Gem.java
+│   │   │   ├── ChonAiDay_Gold.java
+│   │   │   ├── ChonAiDay_Ruby.java
+│   │   │   ├── ConSoMayManData.java
+│   │   │   └── ConSoMayMan.java
+│   │   ├── MiniGame.java
+│   │   ├── RadaService.java
+│   │   ├── SummonDragon.java
+│   │   ├── TaiXiu.java
+│   │   ├── TopService.java
+│   │   ├── Trade.java
+│   │   ├── TransactionService.java
+│   │   └── UseItem.java
+│   ├── GiftService.java
+│   ├── IntrinsicService.java
+│   ├── InventoryServiceNew.java
+│   ├── ItemMapService.java
+│   ├── ItemService.java
+│   ├── ItemTimeService.java
+│   ├── MapService.java
+│   ├── NapThe.java
+│   ├── NapVangService.java
+│   ├── NgocRongNamecService.java
+│   ├── NpcService.java
+│   ├── OpenPowerService.java
+│   ├── PetService.java
+│   ├── PlayerService.java
+│   ├── RewardService.java
+│   ├── Service.java
+│   ├── SkillService.java
+│   ├── SubMenuService.java
+│   └── TaskService.java
+└── utils
+    ├── CreateMobDataFile.java
+    ├── dispose.java
+    ├── ErrorReslover.java
+    ├── FileIO.java
+    ├── GifSequenceWriter.java
+    ├── ImageToByteArrayAndSaveExample.java
+    ├── ImageUtil2.java
+    ├── ImageUtil.java
+    ├── Logger.java
+    ├── SkillUtil.java
+    ├── StringUtil.java
+    ├── TextToFileExample.java
+    ├── TimeUtil.java
+    ├── TxtToByteArrayAndSaveExample.java
+    └── Util.java
+
+81 directories, 368 files
